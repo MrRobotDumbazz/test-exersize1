@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Blockchain courses</title>
+</head>
+<body>
+    <h1>Blockchain courses</h1>
+    {{range .}} 
+    <a href="/blockchain?id={{.ID}}">
+        <img src="{{.Image}}" alt="{{.Name}}">
+    </a>
+    {{end}}
+</body>
+</html>
